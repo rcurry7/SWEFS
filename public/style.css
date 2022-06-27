@@ -1,5 +1,67 @@
 /* Add your css here */
 
-.avatar {
-  width: 300px;
+body 
+{
+height: 125vh;
+margin-top: 80px;
+padding: 30px;
+background-size: cover;
+font-family: sans-serif;
+background: url(images/BG.jpg);
 }
+header {
+background-color: rgb(0, 0, 0);
+position: fixed;
+left: 0;
+right: 0;
+top: 0px;
+height: 40px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0 black;
+}
+header * {
+display: inline;
+}
+header li {
+margin: 15px;
+}
+header li a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+.avatar {
+  width: 500px;
+  text-align: center;
+
+  
+ 
+}
+
+.button{
+  opacity:1;
+}
+.button:hover{
+  opacity:0.5;
+}
+
+body {
+  background-color: rgb(45, 92, 119);
+  
+  
+  color: White;
+  margin-left: 50px;
+  
+}
+
+
+.art {
+
+  display: none;
+}
+
+
+
+
+
