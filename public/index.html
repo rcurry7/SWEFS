@@ -5,17 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <script src="main.js" defer></script>
   <title>Ryan Curry</title>
 </head>
 <body>
 
+
+
     <header>
     <nav>
     <ul>
+      <li>
+        <a href="index.html" class= "button"> Home </a>
+      </li>
     <li>
     <a href="#" class= "button" onclick = "showFact()"> Fact </a>
     </li>
+    
     <li>
     <a href="#" class= "button" onclick = "showSoft()"> Software </a>
     </li>
@@ -35,45 +42,62 @@
   
   <main>
 
-    <h1 class="myheader">Ryan's Bio</h1>
-    <p>
-      Click the links in the nav bar to find out more!
-     
-    </p>
+
+    <article id = "bioHead" class = "w3-animate-opacity2">
+      <h1 class="myheader" >Ryan Curry</h1>
+      <h3 class="mysubheader" > Click the links in the nav bar to find out more about me!</h3>
+    </article>
 
     
 
-    <article id = "myfact" class = "art">
+    
+
+    <article id = "myfact" class = "w3-animate-opacity">
       <h2>An interesting fact</h2>
-      <p>This is an interesting fact about me should be written here but i spent too longer with the other parts!</p>
+      <p>An interesting fact about me should be written here but I spent too long with the other parts!</p>
     </article>
 
-    <article id = "mysoft" class = "art">
+    <article id = "mysoft" class = "w3-animate-opacity">
+
+     
       <h2>My favourite software</h2>
-      <p> My favourite software is Cubase because i enjoy recording Music with it</p>
+      <p> Below are a few of my most used pieces of software</p>
+      <section id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+      
+        <label for="s1" id="slide1"><img src="images/NEURAL.jpg" alt="Neural DSP"></label>
+        <label for="s2" id="slide2"><img src="images/R.jpg" alt="Cubase"></label>
+        <label for="s3" id="slide3"><img src="images/VALORANT.png" alt="Valorant"></label>
+        <label for="s4" id="slide4"><img src="images/VS.jpg" alt="Visual Studio Code"></label>
+        <label for="s5" id="slide5"><img src="images/PS.png" alt="Photoshop"></label>
+      </section>
+      
 
-      <img class="avatar" src="images/R.jpg">
     </article>
 
-    <article id = "myex" class = "art">
+    <article id = "myex" class = "w3-animate-opacity">
       <h2>My experience</h2>
-      <ul>
-        <li>Have previously completed a L3 Software Development Course and do bits of code here and there in my previous role</li>
-        <li>I made a database for Vet Practices using JS and Jquery Datatables</li>
-        <li>HTML/CSS/JS/JQuery/VBA</li>
-        <li>I do enjoying designing things that little bit more than the logic</li>
-      </ul>
+      
+        <p>I have previously completed a L3 Software Development course and did bits of code here and there in my previous role.</p>
+        <p>I have made a database for Vet Practices using JS and Jquery Datatables with many additional functions.</p>
+        <p>I enjoy working with HTML/CSS/JS/JQuery/VBA.</p>
+        <p>I prefer designing things that little bit more than the logic.</p>
+      
     </article>
 
-    <article id = "myam" class = "art">
+    <article id = "myam" class = "w3-animate-opacity">
       <h2>My ambitions</h2>
-      <p>I would love to be a fully qualified Software Engineer</p>
+      <p>I would love to be a fully qualified L4 Software Engineer, confident in my ability and able to help others</p>
     </article>
 
-    <article id="myhob" class = "art">
+    <article id="myhob" class = "w3-animate-opacity">
       <h2>My hobbies</h2>
-      <p>Music, Guitar, Gaming & spending time with my 2 children</p>
-      <img class="avatar" src="images/G.png">
+      <p>Music, Guitar, Gaming & spending time with my 2 children (probably should of put that one first!)</p>
+     
     </article>
 
 
