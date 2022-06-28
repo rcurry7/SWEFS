@@ -14,6 +14,7 @@ function showFact()
   document.getElementById("myex").style.display = "none";
   document.getElementById("myam").style.display = "none";
   document.getElementById("myhob").style.display = "none";
+  document.getElementById("bioHead").style.display = "none";
 
 
 }
@@ -25,6 +26,7 @@ function showSoft()
   document.getElementById("myex").style.display = "none";
   document.getElementById("myam").style.display = "none";
   document.getElementById("myhob").style.display = "none";
+  document.getElementById("bioHead").style.display = "none";
 
 }
 
@@ -35,6 +37,7 @@ function showEx()
   document.getElementById("myex").style.display = "block";
   document.getElementById("myam").style.display = "none";
   document.getElementById("myhob").style.display = "none";
+  document.getElementById("bioHead").style.display = "none";
 
 }
 
@@ -45,6 +48,7 @@ function showAmb()
   document.getElementById("myex").style.display = "none";
   document.getElementById("myam").style.display = "block";
   document.getElementById("myhob").style.display = "none";
+  document.getElementById("bioHead").style.display = "none";
 
 }
 
@@ -55,5 +59,17 @@ function showHob()
   document.getElementById("myex").style.display = "none";
   document.getElementById("myam").style.display = "none";
   document.getElementById("myhob").style.display = "block";
+  document.getElementById("bioHead").style.display = "none";
+
+}
+
+function showHome()
+{
+  document.getElementById("myfact").style.display = "none";
+  document.getElementById("mysoft").style.display = "none";
+  document.getElementById("myex").style.display = "none";
+  document.getElementById("myam").style.display = "none";
+  document.getElementById("myhob").style.display = "none";
+  document.getElementById("bioHead").style.display = "block";
 
 }
