@@ -98,9 +98,9 @@ body {
 
 
 
-.w3-responsive{display:block;overflow-x:auto}
-.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.w3-animate-opacity{animation:opac 0.8s; display: none; text-align:center }@keyframes opac{from{opacity:0} to{opacity:1}}
+.responsive{display:block;overflow-x:auto}
+.animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{animation:opac 0.8s; display: none; text-align:center }@keyframes opac{from{opacity:0} to{opacity:1}}
 
 
 #slider {

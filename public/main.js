@@ -1,75 +1,18 @@
-//const btn = document.getElementById('myfactbtn')
+//const btn = document.getElementById("fact")
 
 //btn.addEventListener('click', () => {
 
-  //document.getElementById("myart").style.display = "none";
- 
+ // document.getElementById("myfact").style.display = "block";
+ //
 //})
 
 
-function showFact()
-{
-  document.getElementById("myfact").style.display = "block";
-  document.getElementById("mysoft").style.display = "none";
-  document.getElementById("myex").style.display = "none";
-  document.getElementById("myam").style.display = "none";
-  document.getElementById("myhob").style.display = "none";
-  document.getElementById("bioHead").style.display = "none";
+function showHide(idName){
 
+let getClasses = document.getElementsByClassName("animate-opacity");   //get all classes with this name in a list
 
-}
-
-function showSoft()
-{
-  document.getElementById("myfact").style.display = "none";
-  document.getElementById("mysoft").style.display = "block";
-  document.getElementById("myex").style.display = "none";
-  document.getElementById("myam").style.display = "none";
-  document.getElementById("myhob").style.display = "none";
-  document.getElementById("bioHead").style.display = "none";
-
-}
-
-function showEx()
-{
-  document.getElementById("myfact").style.display = "none";
-  document.getElementById("mysoft").style.display = "none";
-  document.getElementById("myex").style.display = "block";
-  document.getElementById("myam").style.display = "none";
-  document.getElementById("myhob").style.display = "none";
-  document.getElementById("bioHead").style.display = "none";
-
-}
-
-function showAmb()
-{
-  document.getElementById("myfact").style.display = "none";
-  document.getElementById("mysoft").style.display = "none";
-  document.getElementById("myex").style.display = "none";
-  document.getElementById("myam").style.display = "block";
-  document.getElementById("myhob").style.display = "none";
-  document.getElementById("bioHead").style.display = "none";
-
-}
-
-function showHob()
-{
-  document.getElementById("myfact").style.display = "none";
-  document.getElementById("mysoft").style.display = "none";
-  document.getElementById("myex").style.display = "none";
-  document.getElementById("myam").style.display = "none";
-  document.getElementById("myhob").style.display = "block";
-  document.getElementById("bioHead").style.display = "none";
-
-}
-
-function showHome()
-{
-  document.getElementById("myfact").style.display = "none";
-  document.getElementById("mysoft").style.display = "none";
-  document.getElementById("myex").style.display = "none";
-  document.getElementById("myam").style.display = "none";
-  document.getElementById("myhob").style.display = "none";
-  document.getElementById("bioHead").style.display = "block";
-
+  for(let i = 0; i < getClasses.length; i++){  //loop through list
+    getClasses[i].style.display = "none";   //for each of the items (i) in list - display none
+  }
+document.getElementById(idName).style.display = "block"; //display the one you want
 }

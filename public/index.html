@@ -20,19 +20,18 @@
         <a href="index.html" class= "button"> Home </a>
       </li>
     <li>
-    <a href="#" class= "button" onclick = "showFact()"> Fact </a>
-    </li>
-    
-    <li>
-    <a href="#" class= "button" onclick = "showSoft()"> Software </a>
+    <a href="#" class= "button"  onclick = "showHide('myfact')"> Fact </a>
     </li>
     <li>
-    <a href="#" class= "button" onclick = "showEx()"> Experience </a>
-    </li>
-    <li> <a href="#" class= "button" onclick = "showAmb()"> Ambitions </a>
+    <a href="#" class= "button" onclick= "showHide('mysoft')"> Software </a>
     </li>
     <li>
-    <a href="#" class= "button" onclick = "showHob()"> Hobbies </a>
+    <a href="#" class= "button" onclick = "showHide('myex')"> Experience </a>
+    </li>
+    <li> <a href="#" class= "button" onclick = "showHide('myam')"> Ambitions </a>
+    </li>
+    <li>
+    <a href="#" class= "button" onclick = "showHide('myhob')"> Hobbies </a>
     </li>
     </ul>
     </nav>
@@ -43,7 +42,7 @@
   <main>
 
 
-    <article id = "bioHead" class = "w3-animate-opacity2">
+    <article id = "bioHead" class = "animate-opacity" style="display:block">
       <h1 class="myheader" >Ryan Curry</h1>
       <h3 class="mysubheader" > Click the links in the nav bar to find out more about me!</h3>
     </article>
@@ -52,12 +51,12 @@
 
     
 
-    <article id = "myfact" class = "w3-animate-opacity">
+    <article id = "myfact" class = "animate-opacity" style="display:none">
       <h2>An interesting fact</h2>
       <p>An interesting fact about me should be written here but I spent too long with the other parts!</p>
     </article>
 
-    <article id = "mysoft" class = "w3-animate-opacity">
+    <article id = "mysoft" class = "animate-opacity" style="display:none">
 
      
       <h2>My favourite software</h2>
@@ -79,7 +78,7 @@
 
     </article>
 
-    <article id = "myex" class = "w3-animate-opacity">
+    <article id = "myex" class = "animate-opacity" style="display:none">
       <h2>My experience</h2>
       
         <p>I have previously completed a L3 Software Development course and did bits of code here and there in my previous role.</p>
@@ -89,12 +88,12 @@
       
     </article>
 
-    <article id = "myam" class = "w3-animate-opacity">
+    <article id = "myam" class = "animate-opacity" style="display:none">
       <h2>My ambitions</h2>
       <p>I would love to be a fully qualified L4 Software Engineer, confident in my ability and able to help others</p>
     </article>
 
-    <article id="myhob" class = "w3-animate-opacity">
+    <article id="myhob" class = "animate-opacity" style="display:none">
       <h2>My hobbies</h2>
       <p>Music, Guitar, Gaming & spending time with my 2 children (probably should of put that one first!)</p>
      
@@ -104,3 +103,4 @@
   </main>
 </body>
 </html>
+ 
