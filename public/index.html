@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <script src="main.js" defer></script>
@@ -11,46 +14,95 @@
 </head>
 <body>
 
+  <header>
+    <nav class="navbar">     
+      <div class="logo">
+        <img src="images/gitlogo.png" style="width:25px; height:25px;" >
+          <a href="https://github.com/xryno/" class="navlink">&nbsp;&nbsp;XRYNO. &nbsp;</a>   
+      </div>
 
+    <ul class="navmenu">
+      <li class="navitem">
+        <a href="#portfolio" class= "navlink"  onclick = "showHide('myfact')">&nbsp;Portfolio&nbsp;</a>
+           </li>
+    <li class="navitem">
+      <a href="#" class= "navlink" onclick= "showHide('mysoft')"> &nbsp;Bio&nbsp;</a>
+        </li>
+    <li class="navitem">
+     <a href="#" class= "navlink" onclick = "showHide('myex')"> &nbsp;Experience&nbsp;</a>
+       </li>
+    <li class="navitem">
+       <a href="#" class= "navlink" onclick = "showHide('myam')">&nbsp;Skills&nbsp;</a>
+       </li>
+    <li class="navitem">
+        <a href="#" class= "navlink" onclick = "showHide('myhob')">&nbsp;Contact&nbsp;</a>
+           </li>
+          </ul>
 
-    <header>
-    <nav>
-    <ul>
-      <li>
-        <a href="index.html" class= "button"> Home </a>
-      </li>
-    <li>
-    <a href="#" class= "button"  onclick = "showHide('myfact')"> Fact </a>
-    </li>
-    <li>
-    <a href="#" class= "button" onclick= "showHide('mysoft')"> Software </a>
-    </li>
-    <li>
-    <a href="#" class= "button" onclick = "showHide('myex')"> Experience </a>
-    </li>
-    <li> <a href="#" class= "button" onclick = "showHide('myam')"> Ambitions </a>
-    </li>
-    <li>
-    <a href="#" class= "button" onclick = "showHide('myhob')"> Hobbies </a>
-    </li>
-    </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
-    </header>
+  </header>
 
-    
+
+<main class="contentmain" id="contentmain">
   
-  <main>
-
-
-    <article id = "bioHead" class = "animate-opacity" style="display:block">
-      <h1 class="myheader" >Ryan Curry</h1>
-      <h3 class="mysubheader" > Click the links in the nav bar to find out more about me!</h3>
+ <section class="frontsection">
+    <article id = "frontbio">
+      <div class="titletext"><h1>Ryan Curry</h1>
+        <p class="subTitle">SOFTWARE ENGINEER</p>
+        <hr class="rule">
+        <p class="subTitle">Chepstow, UK</p>
+        <a href="#"><p class="subTitle">ryan.curry@outlook.com</p></a>   
+        </div>
+      <img src="images/biopic.jpg" class="biopic" style="border-radius:20%; filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.669));">
     </article>
+  </section>
+
+
+  
+    <section class="section1" id="portfolio">
+      
+      <div class="sect-title">
+        <img src="images/portfolio.png">
+        <h1>PORTFOLIO</h1>
+      <p>Ranging from websites to games, my portfolio showcases my best work and demonstrates my knowledge across multiple technologies.</p>
+      </div> 
+
+      <div class="gal">
+          <div class="gal-item">1</div>
+          <div class="gal-item">2</div>
+          <div class="gal-item">3</div>
+          <div class="gal-item">4</div>
+          <div class="gal-item">5</div>
+          <div class="gal-item">6</div>
+          <div class="gal-item">7</div>
+          
+          <div class="gal-desc"><h3>PORTFOLIO WEBSITE</h3> 
+            <hr>
+            <p>This was one of my first projects for the Multiverse apprenticeship. It utilises basic HTML/CSS/JS with media queries to make
+              it a responsive site that displays correctly across multiple devices. I enjoy frontend/UI development so spent a lot of time making
+              it visual appealing.
+            </p>
+            </div>
+      </div>
+
+      
+  
+    </section>
+
+
+      <section class="section2"><h2>Bio</h2>
+        <p>An interesting fact about me should be written here but I spent too long with the other parts!</p>
+      </section>
 
     
-
+     
     
-
+<!-- 
     <article id = "myfact" class = "animate-opacity" style="display:none">
       <h2>An interesting fact</h2>
       <p>An interesting fact about me should be written here but I spent too long with the other parts!</p>
@@ -97,10 +149,10 @@
       <h2>My hobbies</h2>
       <p>Music, Guitar, Gaming & spending time with my 2 children (probably should of put that one first!)</p>
      
-    </article>
-
+    </article> -->
 
   </main>
+ 
 </body>
 </html>
  
